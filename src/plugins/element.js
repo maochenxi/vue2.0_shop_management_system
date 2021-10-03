@@ -27,7 +27,8 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 // 用到element-ui的哪些组件，要来这里按需导入
 // 导入弹框提示组件
@@ -45,6 +46,7 @@ Vue.use(Header)
 Vue.use(Aside)
 Vue.use(Main)
 Vue.use(Tree)
+Vue.use(Cascader)
 Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
