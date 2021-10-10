@@ -28,13 +28,18 @@ import {
   Tree,
   Select,
   Option,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 // 用到element-ui的哪些组件，要来这里按需导入
 // 导入弹框提示组件
 
 // 注册为全局可用的对象
 Vue.use(Option)
+Vue.use(Tabs)
+Vue.use(TabPane)
 Vue.use(Select)
 Vue.use(Button)
 Vue.use(Form)
@@ -43,6 +48,7 @@ Vue.use(Dialog)
 Vue.use(Input)
 Vue.use(Container)
 Vue.use(Header)
+Vue.use(Alert)
 Vue.use(Aside)
 Vue.use(Main)
 Vue.use(Tree)
