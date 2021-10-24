@@ -288,7 +288,6 @@ export default {
       this.queryInfo.pagesize = newSize
       this.getUserList()
     },
-    // 监听switch开关状态的改变
     async getUserList () {
       const { data: res } = await this.$http.get('/users', {
         params: this.queryInfo
@@ -297,6 +296,7 @@ export default {
       this.userList = res.data.users
       this.total = res.data.total
     },
+    // 监听switch开关状态的改变
     async userStateChanged (userinfo) {
       const { data: res } = await this.$http.put(`users/${userinfo.id}/state/${userinfo.mg_state}`)
       if (res.meta.status !== 200) {

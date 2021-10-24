@@ -31,13 +31,17 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
+  Steps,
+  Step
 } from 'element-ui'
 // 用到element-ui的哪些组件，要来这里按需导入
 // 导入弹框提示组件
 
 // 注册为全局可用的对象
 Vue.use(Option)
+Vue.use(Step)
+Vue.use(Steps)
 Vue.use(Tabs)
 Vue.use(TabPane)
 Vue.use(Select)
